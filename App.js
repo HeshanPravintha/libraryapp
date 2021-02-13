@@ -5,6 +5,7 @@ import { store } from "./src/redux/store";
 
 //import AppNavigator from './src/components/Navigation/AppNavigator';
 import { SafeAreaProvider } from 'react-native-safe-area-view';
+import AppNavigator from './src/components/Navigation/AppNavigator';
 
 
 
@@ -14,9 +15,7 @@ export default function App(props) {
       <SafeAreaProvider>
       <View style={styles.container}>
         {Platform.OS === 'ios' && <StatusBar barStyle="default" />}
-        <Text>
-          Hello
-        </Text>
+        <AppNavigator />
       </View>
       </SafeAreaProvider>
     </Provider>
