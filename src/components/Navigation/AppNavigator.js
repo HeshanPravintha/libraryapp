@@ -3,12 +3,16 @@ import { createAppContainer, createSwitchNavigator } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
 
 import MainAuth from '../Screens/Auth/MainAuth'
+import Register from '../Screens/Auth/Register'
+import ForgetPassword from '../Screens/Auth/ForgetPassword'
 import { AppStack } from '../Navigation/MainTabNavigator'
 
 
 const AuthStack = createStackNavigator({
   // Onboarding,
   MainAuth,
+  Register,
+  ForgetPassword
 }, {
   defaultNavigationOptions: {
     headerBackTitle: " ",
